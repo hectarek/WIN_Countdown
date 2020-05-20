@@ -11,17 +11,17 @@ body {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 44px;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 24px;
     margin: 20px;
     font-weight: 400;
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 400;
 }
 
@@ -46,13 +46,13 @@ h3 {
 
 .progress-bar  {
     background-color: #EEE;
-    height: 30px;
+    height: 40px;
     margin: 30px;
     border-radius: 50px;
 }
 
 #progress {
-    height: 30px;
+    height: 40px;
     border-radius: 50px 0px 0px 50px;
     background: -webkit-linear-gradient(45deg,rgba(243, 123, 53, 1) 0%, rgba(255, 191, 2, 1) 33%, rgba(243, 123, 53, 1) 66%, rgba(255, 191, 2, 1) 100%);
     background: linear-gradient(45deg,rgba(243, 123, 53, 1) 0%, rgba(255, 191, 2, 1) 33%, rgba(243, 123, 53, 1) 66%, rgba(255, 191, 2, 1) 100%);
@@ -72,10 +72,21 @@ h3 {
     100% { background-position: 15% 100%; }
   }
 
-#days {
+#date {
+    font-size: 32px;
+}
+
+.days {
+    margin: 20px;
+}
+
+#day-num {
     font-size: 60px;
 }
 
+#hour-num {
+    font-size: 60px;
+}
 
 @media screen and (max-width: 630px) {
 
@@ -93,6 +104,10 @@ h3 {
 
     #days {
         font-size: 36px;
+    }
+
+    .main-content {
+        width: 80%;
     }
 
     .progress-bar {

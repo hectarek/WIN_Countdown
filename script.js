@@ -24,12 +24,15 @@ var x = setInterval(() => {
     // var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
     var dateElement = document.getElementById("date")
-    var daysElement = document.getElementById("days")
+    var daysElement = document.getElementById("day-num")
+    var daysHourElement = document.getElementById("hour-num")
     var progress = document.getElementById("progress")
 
     dateElement.textContent = currentDate.toDateString();
 
-    daysElement.textContent = days + "d " + hours + "hrs ";
+    daysElement.textContent = days;
+
+    daysHourElement.textContent = hours
 
     progress.style.width = percentCompleted + "%"
 
