@@ -53,14 +53,23 @@ h3 {
 
 #progress {
     height: 30px;
-    background-image: linear-gradient(to right,rgb(69, 1, 40), rgb(216, 26, 94), rgb(243, 123, 53), rgb(255, 191, 2), rgb(243, 123, 53), rgb(216, 26, 94), rgb(69, 1, 40));
     border-radius: 50px 0px 0px 50px;
-    -webkit-animation: slide 30s linear infinite;
+    background: -webkit-linear-gradient(45deg,rgba(243, 123, 53, 1) 0%, rgba(255, 191, 2, 1) 33%, rgba(243, 123, 53, 1) 66%, rgba(255, 191, 2, 1) 100%);
+    background: linear-gradient(45deg,rgba(243, 123, 53, 1) 0%, rgba(255, 191, 2, 1) 33%, rgba(243, 123, 53, 1) 66%, rgba(255, 191, 2, 1) 100%);
+    background-size: 400% 400%;
+    -webkit-animation: slide 5s linear infinite;
+    -moz-animation: slide 5s linear infinite;
+    animation: slide 5s linear infinite;
 }
 
 @-webkit-keyframes slide {
-    from { background-position: -1000px -1000px; }
-    to { background-position: 0 0; }
+    0% { background-position: 100% 0%; }
+    100% { background-position: 15% 100%; }
+}
+
+@keyframes slide {
+    0% { background-position: 100% 0%; }
+    100% { background-position: 15% 100%; }
   }
 
 #days {
