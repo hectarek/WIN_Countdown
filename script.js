@@ -2,7 +2,7 @@
 
 //Grabbing the appropriate dates
 var startDate = new Date("March 09, 2020").getTime();
-var graduationDate = new Date("September 09, 2020").getTime();
+var graduationDate = new Date("September 04, 2020").getTime();
 
 //Total duration of the class
 var programDuration = graduationDate - startDate;
