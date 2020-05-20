@@ -1,0 +1,93 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #3a1027;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 20px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.main {
+    background-image: linear-gradient(to bottom right,rgb(216, 26, 94), rgb(243, 123, 53), rgb(255, 191, 2));
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.main-content {
+    background-color: #FFF;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    padding: 40px;
+    box-shadow: 10px 20px 20px 0px rgba(58, 16, 38, 0.1);
+    text-align: center;
+}
+
+.progress-bar  {
+    background-color: #EEE;
+    height: 30px;
+    margin: 30px;
+    border-radius: 50px;
+}
+
+#progress {
+    height: 30px;
+    background-image: linear-gradient(to right,rgb(69, 1, 40), rgb(216, 26, 94), rgb(243, 123, 53), rgb(255, 191, 2), rgb(243, 123, 53), rgb(216, 26, 94), rgb(69, 1, 40));
+    border-radius: 50px 0px 0px 50px;
+    -webkit-animation: slide 30s linear infinite;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: -1000px -1000px; }
+    to { background-position: 0 0; }
+  }
+
+#days {
+    font-size: 60px;
+}
+
+
+@media screen and (max-width: 630px) {
+
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+
+    #days {
+        font-size: 36px;
+    }
+
+    .progress-bar {
+        margin: 10px 0px;
+    }
+}
+  
