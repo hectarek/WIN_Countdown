@@ -49,3 +49,5 @@ daysHourElement.textContent = hours;
 progress.style.width = percentCompleted + "%";
 
 // Finished Program
+
+// Congrats to the WIN program!!
